@@ -24,6 +24,7 @@
       display: none;
     }
   }
+
   &::after {
     content: "";
     width: 100%;
@@ -114,7 +115,6 @@
       @media screen and (max-width: 1439px) {
         top: 320px;
       }
-
       @media screen and (max-width: 1079px) {
         top: 50%;
         z-index: 3;
@@ -145,7 +145,6 @@
             top: 280px;
             right: 93px;
           }
-
           @media screen and (max-width: 1079px) {
             top: 700px;
             right: 50%;
@@ -209,10 +208,6 @@
     bottom: 138px;
   }
 
-  span {
-    font-weight: 700;
-  }
-
   &:before {
     content: "";
     width: 141px;
@@ -223,6 +218,10 @@
     top: -30px;
     left: 50%;
     translate: -50% 0;
+  }
+
+  span {
+    font-weight: 700;
   }
 }
 
@@ -294,6 +293,7 @@
 
     @media screen and (max-width: 779px) {
       translate: -47% 0;
+
       img {
         min-width: 500px;
         min-height: 300px;

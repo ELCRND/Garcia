@@ -26,9 +26,33 @@ body {
   color: #fff;
 }
 
-.scroll-off {
-  max-height: 100vh;
-  overflow: hidden;
+.token {
+  height: 113px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 22px;
+  text-align: center;
+  color: #fff;
+
+  @media screen and (max-width: 779px) {
+    height: 66px;
+  }
+
+  button {
+    transition: scale 200ms ease;
+
+    &:hover {
+      scale: 1.1;
+    }
+    &:active {
+      scale: 1;
+    }
+  }
 }
 
 .tooltip {
@@ -42,6 +66,7 @@ body {
   font-size: 18px;
   text-transform: uppercase;
   color: #060606;
+  font-family: var(--second-family);
   font-weight: 600;
   position: fixed;
   top: 30px;
