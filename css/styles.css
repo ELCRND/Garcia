@@ -151,11 +151,13 @@ body {
 
 .token {
   height: 113px;
+  padding-left: 15px;
+  padding-right: 15px;
   background-color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 100px;
+  gap: 60px;
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 22px;
@@ -165,9 +167,22 @@ body {
 @media screen and (max-width: 779px) {
   .token {
     height: 66px;
+    gap: 20px;
+  }
+}
+.token span {
+  max-width: 800px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media screen and (max-width: 779px) {
+  .token span {
+    max-width: 280px;
   }
 }
 .token button {
+  flex-shrink: 0;
   transition: scale 200ms ease;
 }
 .token button:hover {
