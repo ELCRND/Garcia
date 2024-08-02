@@ -342,9 +342,9 @@
 
       @media screen and (max-width: 1079px) {
         width: 150px;
-        top: 0;
+        top: 10px;
         translate: 50% 0;
-        opacity: 0.8;
+        filter: hue-rotate(-2deg);
       }
     }
 
